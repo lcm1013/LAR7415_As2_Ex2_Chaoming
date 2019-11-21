@@ -22,7 +22,7 @@ http://superfriend.ly/
 html { font-size: 62.5%; } /* for rems */
 body { font-family: Helvetica, Arial, sans-serif; color: #ffffff; background: #e8ecf0 url(i/denim2.png) no-repeat 50% 350px; 
 background-image:
-url(https://this.deakin.edu.au/wp-content/uploads/2016/11/deakin-paperplane.jpg);
+url(https://i.pinimg.com/originals/d3/52/18/d352187c7a58f8ea9dcf4f972aa5afad.jpg);
   background-size: cover;
   }
 
@@ -135,7 +135,7 @@ sub, sup { line-height: 0; }
 -------------------------------------------*/
 .page-wrapper { width: 90%; margin: 0 auto; }
 
-.main h3, .preamble h3, .select { visibility: hidden; font-size: 2rem; text-transform: uppercase; letter-spacing: 0.1em; color: #263358; }
+.main h3, .preamble h3, .select { visibility: hidden; font-size: 2rem; text-transform: uppercase; letter-spacing: 0.1em; color: #DBEDFF; }
 .wf-active .main h3, .wf-active .preamble h3 { font-weight: 900; }
 
 .main h3:after, .preamble h3:after, .select:after { visibility: visible; display: block; }
@@ -231,7 +231,7 @@ sub, sup { line-height: 0; }
 			.designer-name:after, footer a:after { height: 1px; }
 
 
-.select:after { content: "Washes & Styles"; font-size: 1.8rem; text-align: center; width: 7em; margin: 0 auto 2em; background: transparent url(i/waves.png) no-repeat 50% 0; padding: 2em 0 0; color: #182e4f; visibility: visible; }
+.select:after { content: "Record what you want"; font-size: 1.8rem; text-align: center; width: 7em; margin: 0 auto 2em; background: transparent url(i/waves.png) no-repeat 50% 0; padding: 2em 0 0; color: #DBEDFF; visibility: visible; }
 
 .archives, .resources { position: absolute; left: -9999px;  }
 
@@ -427,6 +427,12 @@ h3 {font-size: 25px; letter-spacing: 1em;}
 	*position: static; 	
 	*margin-top: 30px;
 }
+.design-name {
+	color:#dcb70d;
+}
+.designer-name {
+	color:#DBEDFF;
+}
 
 .design-archives li {
 	*display: inline;
@@ -442,6 +448,8 @@ h3 {font-size: 25px; letter-spacing: 1em;}
 	*margin-left: 0; 
 }
 .mastfoot {
+	position:relative;
+	left:120px;
 	letter-spacing: 0.3em
 }
 .featurette-divider {
@@ -462,21 +470,34 @@ padding-top: 5em
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.paperplane-1 {
+	position: relative;
+	left:400px;
+}
+
 .col-md-5 {
 	text-align: center;
+	position:relative;
+	padding-top: 5em;
 }
 .lastparagraph {
 
+	color:#b4bdd6;
+	text-align: center;
+	position: relative;
+	left:20px;
 	text-align: center;
 	display: block;
 	font-size: 18px
-	margin-right:.8rem;
-	margin-left: .8rem;
-	text-indent: 1em;
+	margin-right:.5rem;
+	margin-left: .5rem;
+	text-indent: 0.5em;
 	position: relative;
-	bottom: -16px
+	bottom: -30px
 }
 .illustration{
+	color:#b4bdd6;
 	text-align: center;
 	display: block;
 	font-size: 10px
@@ -484,7 +505,7 @@ padding-top: 5em
 	margin-left: .8rem;
 	text-indent: 1em;
 	position: relative;
-	bottom: -16px
+	bottom: -25px
 }
 .btn-secondary: {
   color: #333;
@@ -493,6 +514,12 @@ padding-top: 5em
   border: .05rem solid #fff;
 }
 .guide {
-	font-size: 28px;
+	color:#dcb70d;
+	font-weight:500;
+	margin:1em, 1em;
+	position:relative;
+	left: 600px;
+	font-size: 35px;
 
 }
+
