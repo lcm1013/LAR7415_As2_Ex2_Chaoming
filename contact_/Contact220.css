@@ -437,7 +437,7 @@ footer { font-size: 1.3rem; }
 .preamble { padding-top: 50px\9; margin-top: 50px\9; }
 
 h1 { font-size: 48px\9; text-transform: uppercase\9; margin: 0\9; padding-top: 30px\9;}
-h2 { font-size: 20px\9;}
+h2 { font-size: 36px\9;}
 h3 {font-size: 25px; letter-spacing: 1em;}
 
 .next a, .previous a, .viewall a, .zen-resources a { background-image: url(i/czg.png)\9; }
@@ -485,29 +485,42 @@ h3 {font-size: 25px; letter-spacing: 1em;}
 .mastfoot {
 	position:relative;
 	left:120px;
-	top:120px;
+	top:300px;
+	
 	letter-spacing: 0.3em
 }
 
+.container{
+	position:relative;
+	top:120px;
+}
 #sidebar {
   position: relative;
-  bottom: 100px;
-  bottom: 0;
-  right: 80px;
+  top:10px;
+  left: 200px;
   background-color: #fff;
   opacity:0.9;
-  width:1450px;
-  height: 1200px;
-  z-index: 10;
-  display: inline-block;
-  align-content: center;
-  top: 0;
-  bottom: 0;
+  width:130vh;
+  height: 50vh;
+  /*z-index: 10;*/
+  display:block;
+  align-content: left;
+  top: 100px;
+  bottom: 100px;
   overflow-y: auto;
 }
 
+.wrapper{
+	position:relative;
+	bottom:550px;
+}
+.row{
+	text-align: left;
+	padding-left: 25px;
+
+}
 .featurette-divider {
-  margin: 12rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
 }
 .col-md-1 {
 position: relative;
@@ -534,10 +547,10 @@ padding-top: 5em
 	padding-top: 5em;
 }
 
-.featurette-heading{
+./*featurette-heading{
 	position:relative;
 	left :520px;
-}
+}*/
 .lead{
 	position:relative;
 	left :420px;
@@ -636,6 +649,7 @@ h4 {
 }
  h2 {
  	color:#22356a;
+ 	font-size: 36px;
  }
 p1 {
 	font-size: 16px;
@@ -655,21 +669,7 @@ p1 {
     line-height: 2.0;
 }
 
-#graphic_tip {
-	width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 20;
-    background: rgba(0,0,0,.85);
-    left: 0;
-    top: 0;
-    color: #fff;
-    display: table;
-    text-align: center;
-    font-size: 16px;
-    margin: 0;
-    font-family: Lato,sans-serif;
-}
+
 
 .gotit {
 	border: 2px solid #fff;
@@ -686,43 +686,3 @@ p1 {
 	cursor: pointer;
 }
 
-#screen {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    opacity: 0.6;
-    z-index: 1;
-    display: none;
-}
-
-.modal {
-    display: none;
-    width: 50vw;
-    height: 50vh;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom:0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    z-index: 2;
-    padding: 30px;
-}
-
-.modal .close-button {
-    color: #cccccc;
-    position:absolute;
-    right: 0;
-    top: 0;
-    margin: 10px;
-    background: none !important;
-    border: none !important;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.modal>.close-button:hover {
-    color: #bbbbbb !important;
-}
