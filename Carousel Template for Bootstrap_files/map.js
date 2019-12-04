@@ -48,14 +48,14 @@ $(document).ready(function() {
     map.on('load', function () {
         
         
-        for (i=0; i<layers.length; i++) {
+        // for (i=0; i<layers.length; i++) {
 
-            // add a button for each layer
-            $(".col-lg-4").append("<a href='#' class='btn btn-secondary' id='" + layers[i][0] + "'>" + layers[i][1] + "</a>"); // see http://api.jquery.com/append/
-        }
+        //     // add a button for each layer
+        //     $("#layers-control").append("<a href='#' class='btn btn-secondary' id='" + layers[i][0] + "'>" + layers[i][1] + "</a>"); // see http://api.jquery.com/append/
+        // }
 
         // show/hide layers when button is clicked
-        $("#layers-control>a").on('click', function(e) {
+        $("#layers a").on('click', function(e) {
 
                 var clickedLayer = e.target.id;
 
