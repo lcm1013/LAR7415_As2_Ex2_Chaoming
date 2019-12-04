@@ -17,19 +17,19 @@ $(document).ready(function() {
      
 });
  
-$(".swipe-area").swipe({
-    swipeStatus:function(event, phase, direction, distance, duration, fingers)
-        {
-            if (phase=="move" && direction =="right") {
-                 $(".container").addClass("open-sidebar");
-                 return false;
-            }
-            if (phase=="move" && direction =="left") {
-                 $(".container").removeClass("open-sidebar");
-                 return false;
-            }
-        }
-});
+// $(".swipe-area").swipe({
+//     swipeStatus:function(event, phase, direction, distance, duration, fingers)
+//         {
+//             if (phase=="move" && direction =="right") {
+//                  $(".container").addClass("open-sidebar");
+//                  return false;
+//             }
+//             if (phase=="move" && direction =="left") {
+//                  $(".container").removeClass("open-sidebar");
+//                  return false;
+//             }
+//         }
+// });
 
 
  var layers = [  // an array of the layers you want to include in the layers control (layers to turn off and on)
