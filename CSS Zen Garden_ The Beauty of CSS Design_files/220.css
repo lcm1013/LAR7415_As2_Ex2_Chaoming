@@ -18,6 +18,41 @@ http://superfriend.ly/
 /*-------------------------------------------    
     Base     
 -------------------------------------------*/
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #dcb70d;
+  border: .5rem solid #dcb70d;
+}
+.cover .btn-lg {
+	padding:0.75rem 1.25rem;
+	  padding-top: 0.75rem;
+	  padding-right:1.25rem;
+	  padding-left: 1.25rem;
+	  padding-bottom: 0.75rem;
+	 font-weight: 700;
+}
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+   position:relative;
+   right:50px;
+   color:#fff;
+   text-shadow: #fff;
+   background-color:#dcb70d;
+   border:0.5rem solid #dcb70d;
+   padding:0.75rem 1.25rem;
+	  padding-top: 0.5rem;
+	  padding-right:2.75rem;
+	  padding-left: 2.75rem;
+	  padding-bottom: 0.5rem;
+	 font-weight: 700;
+   border-radius: 0.8rem;
+}
+
+
+
+
 * { margin: 0; padding: 0; }
 html { font-size: 62.5%; } /* for rems */
 body { font-family: Helvetica, Arial, sans-serif; color: #ffffff; background: #e8ecf0 url(i/denim2.png) no-repeat 50% 350px; 
@@ -179,7 +214,7 @@ sub, sup { line-height: 0; }
 /*-------------------------------------------    
     Preamble
 -------------------------------------------*/
-.summary p { text-transform: uppercase; letter-spacing: 0.1em; font-size: 1.8rem; line-height: 1.6; letter-spacing: 0.5em}
+.summary p { text-transform: uppercase; letter-spacing: 0.1em; font-size: 1.8rem; line-height: 1.6; letter-spacing: 0.5em; text-align: center;}
 
 
 /*-------------------------------------------    
@@ -450,18 +485,35 @@ h3 {font-size: 25px; letter-spacing: 1em;}
 .mastfoot {
 	position:relative;
 	left:120px;
+	top:120px;
 	letter-spacing: 0.3em
 }
+
+#sidebar {
+  position: relative;
+  bottom: 100px;
+  bottom: 0;
+  right: 80px;
+  background-color: #fff;
+  opacity:0.9;
+  width:1450px;
+  height: 1200px;
+  z-index: 10;
+  display: inline-block;
+  align-content: center;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
 .featurette-divider {
   margin: 12rem 0; /* Space out the Bootstrap <hr> more */
 }
 .col-md-1 {
-text-align: center;
 position: relative;
 padding-top: 5em
 }
 .col-md-3 {
-text-align: center;
 position: relative;
 padding-top: 5em
 }
@@ -469,21 +521,36 @@ padding-top: 5em
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
 .paperplane-1 {
 	position: relative;
-	left:400px;
+	left:450px;
 }
 
 .col-md-5 {
-	text-align: center;
 	position:relative;
 	padding-top: 5em;
 }
+
+.featurette-heading{
+	position:relative;
+	left :520px;
+}
+.lead{
+	position:relative;
+	left :420px;
+	display:inline;
+}
+.lead-1{
+	position:relative;
+	left :570px;
+}
+
 .lastparagraph {
 
-	color:#b4bdd6;
+	color:#fff;
 	text-align: center;
 	position: relative;
 	left:20px;
@@ -497,13 +564,8 @@ padding-top: 5em
 	bottom: -30px
 }
 .illustration{
-	color:#b4bdd6;
+	color:#fff;
 	text-align: center;
-	display: block;
-	font-size: 10px
-	margin-right:.8rem;
-	margin-left: .8rem;
-	text-indent: 1em;
 	position: relative;
 	bottom: -25px
 }
@@ -523,3 +585,103 @@ padding-top: 5em
 
 }
 
+.arrow-left{
+	position: relative;
+	right:80px;
+	top:24px;
+	float:left;
+	width:53%;
+	height:100%;
+	border-bottom:24px solid #fff;
+	border-right:24px solid transparent;
+	opacity:0.9;
+
+}
+
+.arrow-right{
+	float:right;
+	width:56%;
+	height:100%;
+	border-bottom:24px solid #fff;
+	border-left:24px solid transparent;
+	position: relative;
+	left:80px;
+	bottom:0px;
+	opacity:0.9;
+}
+
+h4 {
+	font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.bg-approach {
+	position:relative;
+	left:560px;
+	top:15px;
+}
+.service-container {
+	position:relative;
+	top:50px;
+}
+.service-container{
+	background-color:rgba(0,0,0,.2)；
+	}.
+.bg-service{
+	padding:60px 0;
+	background-color:#fff;
+}
+ h2 {
+ 	color:#22356a;
+ }
+p1 {
+	font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	color:#22356a;
+}
+
+
+
+#graphic_tip span {
+	display: table-cell;
+    vertical-align: middle;
+    letter-spacing: 3px;
+    line-height: 2.0;
+}
+
+#graphic_tip {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    background: rgba(0,0,0,.85);
+    left: 0;
+    top: 0;
+    color: #fff;
+    display: table;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    font-family: Lato,sans-serif;
+}
+
+.gotit {
+	border: 2px solid #fff;
+    padding: 10px 22px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.gotit {
+	font-style: italic;
+    font-weight: 700;
+}
+.gotit {
+	cursor: pointer;
+}

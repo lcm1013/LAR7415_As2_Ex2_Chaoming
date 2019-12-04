@@ -18,6 +18,7 @@
  *
  * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
  */
+
 if(!window.Typekit)window.Typekit={};window.Typekit.config={"a":"760","c":[".tk-effra","\"effra\",sans-serif"],"fi":[9785,9786,9787,9788,9789,9790,9791,9792,9793,9794],"fc":[{"id":9785,"family":"effra","src":"https://use.typekit.net/af/5c84c3/00000000000000000001787b/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"400","style":"normal","display":"auto","subset_id":2}},{"id":9786,"family":"effra","src":"https://use.typekit.net/af/32bae8/00000000000000000001787c/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"400","style":"italic","display":"auto","subset_id":2}},{"id":9787,"family":"effra","src":"https://use.typekit.net/af/946b62/00000000000000000001787f/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"700","style":"normal","display":"auto","subset_id":2}},{"id":9788,"family":"effra","src":"https://use.typekit.net/af/64b320/000000000000000000017880/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"700","style":"italic","display":"auto","subset_id":2}},{"id":9789,"family":"effra","src":"https://use.typekit.net/af/d82207/000000000000000000017879/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"300","style":"normal","display":"auto","subset_id":2}},{"id":9790,"family":"effra","src":"https://use.typekit.net/af/dc0f28/00000000000000000001787a/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"300","style":"italic","display":"auto","subset_id":2}},{"id":9791,"family":"effra","src":"https://use.typekit.net/af/5ea570/00000000000000000001787d/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"500","style":"normal","display":"auto","subset_id":2}},{"id":9792,"family":"effra","src":"https://use.typekit.net/af/9ead62/00000000000000000001787e/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"500","style":"italic","display":"auto","subset_id":2}},{"id":9793,"family":"effra","src":"https://use.typekit.net/af/d3769f/000000000000000000017881/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"900","style":"normal","display":"auto","subset_id":2}},{"id":9794,"family":"effra","src":"https://use.typekit.net/af/06ea21/000000000000000000017882/27/{format}{?primer,subset_id,fvd,v}","descriptors":{"weight":"900","style":"italic","display":"auto","subset_id":2}}],"fn":["effra",["i3","i4","i5","i7","i9","n3","n4","n5","n7","n9"]],"hn":"use.typekit.net","ht":"tk","js":"1.19.2","kt":"qoj3gsc","l":"typekit","ps":1,"ping":"https://p.typekit.net/p.gif{?s,k,ht,h,f,a,js,app,e,_}","pm":true,"type":"configurable","vft":false};
 /*{"k":"1.19.2","auto_updating":true,"last_published":"2016-05-03 02:03:58 UTC"}*/
 ;(function(window,document,undefined){if(!document.querySelector){document.documentElement.className+=" wf-inactive";return;}function aa(a,b,c){return a.call.apply(a.bind,arguments)}function ba(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}}function h(a,b,c){h=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return h.apply(null,arguments)}var l=Date.now||function(){return+new Date};function ca(a){this.g=a||"-"}ca.prototype.b=function(a){for(var b=[],c=0;c<arguments.length;c++)b.push(arguments[c].replace(/[\W_]+/g,"").toLowerCase());return b.join(this.g)};function da(){var a=[{name:"font-family",value:m.c[n+1]}];this.g=[m.c[n]];this.b=a}function fa(a){for(var b=a.g.join(","),c=[],d=0;d<a.b.length;d++){var e=a.b[d];c.push(e.name+":"+e.value+";")}return b+"{"+c.join("")+"}"};function q(a,b){return(a&65535)*b+(((a>>>16)*b&65535)<<16)};function r(a,b){this.b=b||Array(Math.ceil(a/32));if(!b)for(var c=0;c<this.b.length;c++)this.b[c]=0}r.prototype.set=function(a){if(Math.floor(a/32+1)>this.b.length)throw Error("Index is out of bounds.");var b=Math.floor(a/32);this.b[b]|=1<<a-32*b};r.prototype.has=function(a){if(Math.floor(a/32+1)>this.b.length)throw Error("Index is out of bounds.");var b=Math.floor(a/32);return!!(this.b[b]&1<<a-32*b)};function ga(a,b,c){this.b=a;this.i=b;this.g=new r(a,c)}var ha=[2449897292,4218179547,2675077685,1031960064,1478620578,1386343184,3194259988,2656050674,3012733295,2193273665];
@@ -47,4 +48,57 @@ function Ta(){if(!Ia())return!1;for(var a=m.fc,b=0;b<a.length;b++)if(1===a[b].de
 if(m.pm&&!window.WebFont&&1===Math.round(30*Math.random())){var Va=window.Typekit.load,Wa=[];window.Typekit.load=function(a){a=a||{};var b=a.active||function(){},c=a.fontactive||function(){},d=(new Date).getTime();a.active=function(){b();if(!window.XDomainRequest){var a=new Image,c=function(a){a={fonts:Wa,augmentations:[],font_loading:window.FontFace?"native":"non-native",active_duration:(new Date).getTime()-d,javascript_version:m.js,kit_type:"configurable",ad_blocker:a,test_group:Ta()};a=JSON.stringify(a);
 if(!window.XDomainRequest){var b=new XMLHttpRequest;b.open("POST","https://performance.typekit.net/");b.send(a)}};a.src="https://p.typekit.net/p.gif?";a.onload=function(){for(var a=!1,b=0;b<document.styleSheets.length;b++)if(null===document.styleSheets[b].href&&/ghostery-purple-box/.test(document.styleSheets[b].ownerNode.textContent)){a=!0;break}c(a)};a.onerror=function(){c(!0)}}};a.fontactive=function(a,b){c(a,b);var g;a:{g=na(b);for(var k=0;k<V.length;k++)if(V[k].family===a&&V[k].descriptors.weight===
 g.weight&&V[k].descriptors.style===g.style){g=V[k].id;break a}g=0}Wa.push({id:g,duration:(new Date).getTime()-d,dynamic:!1,weight:b.charAt(1)+"00",variable:Ua(a,b)})};Va(a)}}if(window.WebFont)try{window.Typekit.load()}catch(a){};}(this,document));
+
+
+// $('.gotit').on('click', function () {
+
+//     $('#graphic_tip').fadeToggle(); // toggles visibility of background screen when clicked (shows if hidden, hides if visible)
+
+//     // $('.modal').fadeToggle(); // toggles visibility of background screen when clicked (shows if hidden, hides if visible)	                        
+
+// });
+
+
+$('.gotit'). on('click', function(){
+	$('#graphic_tip').fadeOut();
+	// $(this).fadeTo( 1000, 0.5, funtion(){
+	// });
+});
+// Close "About this Map" modal when close button in modal is clicked
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("image");
+    if (n > x.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" button-on", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " button-on";
+}
+
+$(document).ready(function () {
+    $("#help").click();
+})
 
